@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="25dp"
+    android:background="@color/biru"
+    tools:context="example.uasapps.FragmentActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imgMovie"
+        android:layout_marginStart="16dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:text="13 BOM DI JAKARTA"/>
+
+    <TextView
+        android:id="@+id/Deskription"
+        android:layout_toRightOf="@id/imgMovie"
+        android:layout_below="@id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:maxLines="5"
+        android:textColor="@color/black"
+        android:text="Film ini menceritakan tentang teror sekumpulan teroris yang ingin menyerang Jakarta, ibukota Indonesia. Serangan 13 Bom ini akan menghancurkan kota dan menimbulkan banyak korban jiwa yang tak terhitung jumlahnya. "/>
+
+    <Button
+        android:id="@+id/bomdijakarta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Deskription"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/imgMovie"
+        android:onClick="playBomDiJakrtaTrailer"
+        android:text="tonton trailer" />
+
+    <ImageView
+        android:id="@+id/imgMovie"
+        android:layout_width="150dp"
+        android:layout_height="170dp"
+        android:src="@drawable/filmaction1" />
+
+    <TextView
+        android:id="@+id/tvTitle2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="200dp"
+        android:layout_toRightOf="@id/imgMovie2"
+        android:text="FAST X"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/Deskription2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="212dp"
+        android:layout_toRightOf="@id/imgMovie2"
+        android:maxLines="5"
+        android:textColor="@color/black"
+        android:text="Fast x masih mempunyai relasi dengan tayangan-tayangan bertajuk Furious lainnya yang sudah lebih dahulu rilis." />
+
+    <ImageView
+        android:id="@+id/imgMovie2"
+        android:layout_width="150dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/filmaction2" />
+
+    <Button
+        android:id="@+id/fastx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/imgMovie2"
+        android:layout_below="@id/Deskription2"
+        android:text="tonton trailer"
+        android:onClick="playfastxTrailer"/>
+
+    <ImageView
+        android:id="@+id/imgMovie3"
+        android:layout_width="150dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="400dp"
+        android:src="@drawable/filmaction3"/>
+
+    <TextView
+        android:id="@+id/tvTitle3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="400dp"
+        android:layout_toRightOf="@id/imgMovie3"
+        android:text="MEN IN BLACK"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/Deskription3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="403dp"
+        android:layout_toRightOf="@id/imgMovie3"
+        android:maxLines="5"
+        android:text="Menceritakan tentang seorang anak perempuan yang berhasil lolos dari penghapusan ingetan"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/meninblack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Deskription3"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/imgMovie3"
+        android:onClick="playmeninblackTrailer"
+        android:text="tonton trailer" />
+</RelativeLayout>
